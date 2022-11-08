@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+
+    <style>
+        input {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Caculator</h2>
+        <input type="text" placeholder="Nhập số hạng" id="num1">
+        <input type="text" placeholder="Nhập số hạng" id="num2">
+        <br>
+        <div style="margin-top: 8px;">
+            <input type="button" value="Addition(+)" onclick="resultAdd()">
+            <input type="button" value="Subtraction(-)" onclick="resultSub()">
+            <input type="button" value="Multiplication(x)" onclick="resultMul()">
+            <input type="button" value="Division(/)" onclick="resultDiv()">
+        </div>
+
+        <div style="margin-top: 8px;">
+            <span>
+                Result:
+                <div id="messageDiv" style="display: inline-block;"></div>
+            </span>
+        </div>
+    </form>
+</body>
+
+<script src="main.js"></script>
+</html>
